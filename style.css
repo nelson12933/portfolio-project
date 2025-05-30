@@ -1,0 +1,388 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #3b82f6, #9333ea);
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Container centers content and sets max width */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255 255 255 / 0.3);
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #e0e7ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #c7d2fe;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d8b4fe;
+  text-decoration: underline;
+}
+
+/* Main Sections */
+.section {
+  margin: 4rem 0;
+}
+
+.section h2 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #ddd6fe;
+  border-left: 6px solid #c084fc;
+  padding-left: 0.75rem;
+}
+
+/* About */
+.about p {
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #e0e7ffcc;
+  line-height: 1.7;
+}
+
+/* Projects */
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.project-card {
+  background: rgba(255 255 255 / 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.25);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgb(0 0 0 / 0.5);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem;
+  color: #d8b4fe;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin: 0 1rem 1.25rem;
+  color: #e0e7ffcc;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid rgba(255 255 255 / 0.3);
+  padding: 3rem 0;
+  color: #c7d2fe;
+  text-align: center;
+  font-weight: 600;
+}
+
+.footer a {
+  color: #d8b4fe;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #a78bfa;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+/* Home Section */
+.home {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.home h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ddd6fe;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.25rem;
+  color: #e0e7ffcc;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #c084fc;
+  color: white;
+  padding: 0.75rem 1.75rem;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: #a855f7;
+}
+
+/* Skills Section */
+.skills {
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+.skills h2 {
+  border-left: 6px solid #c084fc;
+  padding-left: 0.75rem;
+  color: #ddd6fe;
+}
+
+.skill {
+  margin: 1.5rem 0;
+}
+
+.skill h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #d8b4fe;
+}
+
+/* Skill bar backgrounds */
+.skill-bar-bg {
+  background: rgba(255 255 255 / 0.15);
+  border-radius: 15px;
+  height: 22px;
+  overflow: hidden;
+}
+
+/* Skill bar fills */
+.skill-bar-fill {
+  background: #c084fc;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Hover effect for JavaScript skill bar */
+.skill-bar-fill.js-skill:hover {
+  box-shadow: 0 0 12px 3px #f7df1e;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 650px) {
+  /* Stack header items vertically and center */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* Make nav links larger tap targets */
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+
+  /* Single column project list */
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reduce gaps in nav */
+  .nav-links {
+    gap: 1rem;
+  }
+
+  /* Reduce side padding in sections */
+  .container {
+    width: 95%;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Scale down main headings a bit */
+  .section h2 {
+    font-size: 2.2rem;
+  }
+
+  /* Home section */
+  .home h2 {
+    font-size: 2.5rem;
+  }
+
+  .home p {
+    font-size: 1.1rem;
+  }
+
+  /* Buttons full width with centered text */
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+  }
+
+  /* Skill bars smaller height */
+  .skill-bar-bg {
+    height: 18px;
+  }
+
+  /* Experience section (if added) adjustments */
+  .experience {
+    padding: 0 1rem;
+  }
+
+  .experience h2 {
+    font-size: 2rem;
+  }
+
+  /* Project card text scaling */
+  .project-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Combined header.container styles */
+.header.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Make sure hamburger and logo are spaced nicely */
+.hamburger {
+  margin-right: 15px; /* space between hamburger and logo */
+  flex-direction: column;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  width: 30px;
+  height: 25px;
+  justify-content: space-between;
+  display: none; /* hidden by default */
+}
+
+/* Hamburger bars lighter for contrast */
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #eee; /* lighter for visibility */
+  border-radius: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 60px; /* adjust based on header height */
+    right: 0;  /* open from right */
+    background: white;
+    width: 200px;
+    border: 1px solid #ccc;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+  .nav-links li a {
+    color: #333;
+    font-size: 16px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nelson's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="portfolio">
+   <header class="header container">
+  <h1 class="logo">Nelson Akusinawa</h1>
+
+  <!-- Hamburger button -->
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+    <main class="container">
+      <section id="home" class="section home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hi! I’m Nelson, a passionate developer creating vibrant and engaging digital experiences.</p>
+        <a href="#projects" class="btn">See My Work</a>
+      </section>
+
+      <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>
+          Hi my name is Nelson i am a passionate web developer with a knack for transforming ideas into vibrant, user-friendly digital experiences. With a strong foundation in HTML, CSS, and JavaScript, I enjoy crafting clean, modern designs that not only look great but perform seamlessly across devices. I’m always eager to learn new technologies and collaborate on projects that challenge me to grow creatively and technically. Let’s build something amazing together!
+        </p>
+      </section>
+
+      <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-skill-level="90"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" data-skill-level="85"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill js-skill" data-skill-level="75"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience section added here -->
+      <section id="experience" class="section experience">
+        <h2>Experience</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <h3>Front-End Developer</h3>
+            <p class="company">New Horizons ICT</p>
+            <ul>
+              <li>Developed responsive websites and interactive UI components using React and Tailwind CSS.</li>
+              <li>Collaborated with designers and backend teams to implement seamless user experiences.</li>
+              <li>Optimized performance and accessibility across multiple devices.</li>
+            </ul>
+          </article>
+          <article class="experience-item">
+            <h3>Web Development Projects</h3>
+            <p class="company">New Horizons ICT</p>
+            <ul>
+              <li>Assisted in creating company website project improvements with HTML, CSS, and JavaScript.</li>
+              <li>Participated in agile team meetings and contributed to sprint planning.</li>
+              <li>Performed testing and debugging to enhance functionality.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <h3>Age Calculator Project</h3>
+            <p>In this project, we are going to create an age calculator. As you can see from the final version of the project, we have a container here with the title age calculator with an input of a date. If we click on the date input, we can choose the date of our birthday. For example, if we choose a date in in 2022 and if we click now on Calculate Age, you can see the age is calculated based on this date and saying your age is 21 years old.</p>
+          </article>
+          <article class="project-card">
+            <h3>Simple Stopwatch Project</h3>
+            <p>Welcome to the Stopwatch Project! We will create a timer displayed at the top, along with three buttons - start, stop, and reset. Clicking the START button will begin the timer. The STOP button will pause the timer using a JavaScript method called SetInterval, which can be cleared using clearInterval. The RESET button will reset the timer to zero. If you click STOP and then START again, the timer will continue from the previously elapsed time. We'll start by installing CSS for the buttons' design and hover effects, then use JavaScript to get the browser time, manipulate the content, replace it with the calculated time, and provide the start, stop, and reset functionality.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer container">
+      <h2>Contact Me</h2>
+      <p>
+        Email: <a href="mailto:nelsonakus1@gmail.com">nelsonakus1@gmail.com</a>
+      </p>
+      <p>Phone: +234 08084766540</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
